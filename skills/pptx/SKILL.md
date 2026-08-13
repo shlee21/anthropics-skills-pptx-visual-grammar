@@ -105,6 +105,40 @@ Choose colors that match your topic — don't default to generic blue. Use these
 | **Sage Calm** | `84B59F` (sage) | `69A297` (eucalyptus) | `50808E` (slate) |
 | **Cherry Bold** | `990011` (cherry) | `FCF6F5` (off-white) | `2F3C7E` (navy) |
 
+### Choose Visual Grammar Before Shapes
+
+Classify the information relationship before selecting layout or geometry. Do not use a shape merely as a text container and call it visualization.
+
+| Information relationship | Prefer |
+|---|---|
+| Metrics and outcomes | Dominant number, bar, dot plot, proportion chart |
+| Time and stages | Timeline, staircase, progress path |
+| Cause and effect | Directional flow, causal chain |
+| Comparison | Side-by-side contrast, before/after, shared baseline |
+| Options and decisions | Decision matrix, priority axes, branching structure |
+| Inclusion and overlap | Venn diagram |
+| Organization and roles | Hierarchy or collaboration map |
+| Workflow or output | Real screenshot, wireframe, dashboard mockup |
+| One core message | Generous whitespace, one statement, one representative visual |
+
+Use circles or ellipses only when they encode cycles, overlap, sets, hub-and-spoke relationships, or one isolated metric. Do not repeat them as generic text containers or decoration.
+
+Before implementation, create a slide-level visual plan with these columns:
+
+| Slide | Core message | Information relationship | Visual grammar | Difference from previous slide | Presenter explanation |
+|---|---|---|---|---|---|
+
+Revise the plan before building when a visual grammar is overused. Do not repeat the same base geometry or composition on adjacent slides. Limit each visual family—such as circle diagrams, card grids, or side-by-side comparisons—to at most two slides per deck. If content genuinely requires more, record the reason in the plan.
+
+For executive proposals, first consider:
+
+- Results: dominant metric plus the meaning of the change
+- Current state: real workflow or work-product view
+- Organizational readiness: relationship map
+- Candidate work: criteria-based comparison or decision matrix
+- Operation: staged path with decision gates
+- Final decision: one clear choice surface with decision record
+
 ### For Each Slide
 
 **Every slide needs a visual element** — image, chart, icon, or shape. Text-only slides are forgettable.
@@ -150,6 +184,9 @@ Choose colors that match your topic — don't default to generic blue. Use these
 ### Avoid (Common Mistakes)
 
 - **Don't repeat the same layout** — vary columns, cards, and callouts across slides
+- **Don't replace repeated rectangles with repeated circles** — change the visual grammar, not just the geometry
+- **Don't treat text inside a shape as visualization** — position, scale, direction, connection, contrast, or a real artifact must reveal meaning
+- **Don't use circles or ellipses as the default container** — reserve them for relationships they actually encode
 - **Don't center body text** — left-align paragraphs and lists; center only titles
 - **Don't skimp on size contrast** — titles need 36pt+ to stand out from 14-16pt body
 - **Don't default to blue** — pick colors that reflect the specific topic
@@ -202,6 +239,16 @@ accepts: python-pptx opens those decks, LibreOffice renders them, the XSD
 passes them. Every failure names its fix. Fix it in the generator and rebuild.
 
 ### Visual QA
+
+Before delivery, review the complete deck at fit-to-window size and ask:
+
+- Is each slide's focal point recognizable from a distance?
+- Does the visual reveal a relationship or priority, or is it only decorated text?
+- Are circles, cards, boxes, or other visual families repeating mechanically?
+- Is the first point of attention clear on every slide?
+- Does real work and decision information take priority over decoration?
+
+If removing the shapes leaves the same list of text with no loss of meaning, redesign the slide rather than polishing the containers.
 
 Convert the slides to images (see [Converting to Images](#converting-to-images)) and inspect every one. After staring at the generating code you tend to see what you expect rather than what rendered, so look at the images fresh (a subagent works well for this if you have one). User-visible defects to look for:
 
